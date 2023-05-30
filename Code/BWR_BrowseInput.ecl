@@ -15,5 +15,5 @@ OUTPUT(COUNT(AlphaPeeps),NAMED('GA_AlphaPeep_Cnt'));
 
 // OUTPUT(Persons(Birthdate[1..4] >= '2009'),NAMED('A85_BD'));
 
-// OUTPUT(SUM(Accounts(Balance < 10000),Balance),NAMED('Sum_Bal'));
+OUTPUT(SUM(Accounts(Balance < 10000),Balance),NAMED('Sum_Bal'));
 

@@ -1,10 +1,7 @@
 ﻿IMPORT $;
 
-// EXPORT 
 NoTradeTypeAccounts :=  $.File_Accounts.File(TradeType NOT IN $.Sets.AcctTradeTypes);
 
-//Testing
-COUNT(NoTradeTypeAccounts);
+COUNT(NoTradeTypeAccounts); //1730
 OUTPUT(NoTradeTypeAccounts);	
 
-// DISTRIBUTION($.File_Accounts.File,TradeType);			 

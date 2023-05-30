@@ -20,5 +20,5 @@ EXPORT Layout := RECORD
  UNSIGNED1 Late90Day;
  STRING1   TermType;
 END;
-EXPORT File := DATASET('~CLASS::BMF::Intro::Accounts',Layout,CSV);
+EXPORT File := DATASET('~MINI::BMF::Intro::Accounts',Layout,CSV(HEADING(1)));
 END;

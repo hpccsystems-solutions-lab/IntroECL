@@ -1,8 +1,8 @@
 ﻿IMPORT $;
 Persons := $.File_Persons.File;
-EXPORT 
+
 YoungMaleFloridaPersons := Persons($.IsYoungMaleFloridian);
 
-//Testing
-// COUNT(YoungMaleFloridaPersons);
-// OUTPUT(YoungMaleFloridaPersons);
+
+COUNT(YoungMaleFloridaPersons); //3
+OUTPUT(YoungMaleFloridaPersons);
