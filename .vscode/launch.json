@@ -12,7 +12,21 @@
             "rejectUnauthorized": true,
             "resultLimit": 100,
             "timeoutSecs": 60,
-            "user": "yournamehere",
+            "user": "TrainerBob",
+            "password": ""
+        },
+        {
+            "name": "ODSCEast",
+            "type": "ecl",
+            "request": "launch",
+            "protocol": "http",
+            "serverAddress": "training.us-hpccsystems-dev.azure.lnrsg.io",
+            "port": 8010,
+            "targetCluster": "thor",
+            "rejectUnauthorized": true,
+            "resultLimit": 100,
+            "timeoutSecs": 60,
+            "user": "TrainerBob",
             "password": ""
         },
         {
