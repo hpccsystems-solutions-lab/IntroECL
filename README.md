@@ -1,7 +1,7 @@
 # IntroECL
 Welcome to the Repository of the new Introduction to ECL Mini Course
 
-##Getting Started
+## Getting Started
 
 This repo is designed to be used with the GitPods Interface. The link to launching GitPods is here:
 
@@ -12,9 +12,9 @@ The first time GitPods launches, an image needs to be created. Please be patient
 
 A short video on launching GitPods and starting the course can be found here:
  
-[Launch IntroECL Mini Course in GitPods](https://hpccsystems.com/)
+[Video Getting Started](https://hpccsystems.com/)
 
-##Caveats
+## Caveats
 At the time of this launch a free GitPods account is 50 hours a month. It is not an open source product and more time per month requires a subscription.
 
 The GitPods instance that you launch is NOT persistent. In order to make the most of your time, a smaller version of our training datasets is located in the repo Data folder.
