@@ -6,5 +6,5 @@
    UNSIGNED3  ZipCode;
    END;
 
-  EXPORT File := DATASET('~CLASS::BMF::OUT::LookupCSZTeach',Layout,FLAT);
+  EXPORT File := DATASET('~MINI::BMF::OUT::LookupCSZ',Layout,FLAT);
 END;

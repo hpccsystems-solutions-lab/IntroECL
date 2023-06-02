@@ -13,4 +13,4 @@ NewPerson IDRecs(Persons Le,INTEGER Cnt) := TRANSFORM
 END;
 
 EXPORT UID_Persons := PROJECT(Persons,IDRecs(LEFT,COUNTER)) 
-                   :PERSIST('~CLASS::BMF::PERSIST::UID_People');
+                   :PERSIST('~MINI::BMF::PERSIST::UID_People');

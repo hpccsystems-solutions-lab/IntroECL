@@ -15,10 +15,10 @@ END;
 
 EXPORT 
 //No Local Sequencing:
-// UID_Accounts := ITERATE(AcctsTbl,IDRecs(LEFT,RIGHT)): PERSIST('~CLASS::BMF::PERSIST::UID_Accounts');
+// UID_Accounts := ITERATE(AcctsTbl,IDRecs(LEFT,RIGHT)): PERSIST('~MINI::BMF::PERSIST::UID_Accounts');
 //Local Sequencing:
 UID_Accounts := ITERATE(AcctsTbl,IDRecs(LEFT,RIGHT),LOCAL)
-                       : PERSIST('~CLASS::BMF::PERSIST::UID_Accounts');
+                       : PERSIST('~MINI::BMF::PERSIST::UID_Accounts');
 // OUTPUT(SORT(UID_Accounts,RecID));		
 
 				 

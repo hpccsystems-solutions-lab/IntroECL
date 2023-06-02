@@ -16,5 +16,5 @@ EXPORT STD_Persons := MODULE //DON'T SUBMIT YOUR MODULE :-) - SYNTAX CHECK ONLY!
 		$.UID_Persons.State;
 		UNSIGNED3  ZipCode := (UNSIGNED3)$.UID_Persons.ZipCode;
 	END;
-	EXPORT File := TABLE($.UID_Persons,Layout) : PERSIST('~CLASS::BMF::PERSIST::STD_Persons');
+	EXPORT File := TABLE($.UID_Persons,Layout) : PERSIST('~MINI::BMF::PERSIST::STD_Persons');
 END;

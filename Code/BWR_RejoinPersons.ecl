@@ -17,4 +17,4 @@ BulkRecs := JOIN($.File_Persons_Slim.File,
                  $.File_LookupCSZ.File,
                  LEFT.CSZ_ID=RIGHT.CSZ_ID,
                  Bulkup(LEFT,RIGHT),LEFT OUTER,LOOKUP);
-OUTPUT(BulkRecs,,'~CLASS::BMF::OUT::Persons_Rejoined',overwrite);
+OUTPUT(BulkRecs,,'~MINI::BMF::OUT::Persons_Rejoined',overwrite);

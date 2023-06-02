@@ -5,7 +5,7 @@ Layout_T_recs := RECORD
   $.STD_Persons.File.State;
   $.STD_Persons.File.Zipcode;
   END;
-T_recs := TABLE($.STD_Persons.File,Layout_T_recs);//841400
+T_recs := TABLE($.STD_Persons.File,Layout_T_recs);//10000
 S_recs := SORT(T_recs,ZipCode,State,City,CSZ_ID);
 
 S_Recs RollCSV(S_Recs Le, S_Recs Ri) := TRANSFORM
@@ -19,7 +19,7 @@ Rollup_CSZ := ROLLUP(S_Recs,
                      LEFT.City=RIGHT.City,
                      RollCSV(LEFT,RIGHT));
 
-OUTPUT(Rollup_CSZ,,'~CLASS::BMF::OUT::LookupCSZTeach',overwrite);
+OUTPUT(Rollup_CSZ,,'~MINI::BMF::OUT::LookupCSZ',overwrite);//7998 total
 
 
 

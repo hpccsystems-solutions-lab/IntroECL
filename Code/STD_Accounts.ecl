@@ -23,5 +23,5 @@ EXPORT STD_Accounts := MODULE
 	UID.Late90Day;
 	UID.TermType;
 	END;
-	EXPORT File := TABLE(UID,Layout):PERSIST('~CLASS::BMF::PERSIST::STD_Accounts');
+	EXPORT File := TABLE(UID,Layout):PERSIST('~MINI::BMF::PERSIST::STD_Accounts');
 END;
