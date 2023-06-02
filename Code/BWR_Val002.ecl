@@ -3,5 +3,7 @@ Accounts := $.File_Accounts.File;
 SumHighCredit := SUM(Accounts,HighCredit);
 SumBalance    := SUM(Accounts,Balance);
 
-EXPORT val002 := ROUND(SumHighCredit/SumBalance);
+val002 := ROUND(SumHighCredit/SumBalance);
+
+OUTPUT(val002);
 
