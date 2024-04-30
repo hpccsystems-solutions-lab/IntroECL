@@ -1,7 +1,21 @@
 {
     "version": "0.2.0",
     "configurations": [
-	    {
+		{
+            "name": "ChallengeCluster",
+            "type": "ecl",
+            "request": "launch",
+            "protocol": "http",
+            "serverAddress": "training.us-hpccsystems-dev.azure.lnrsg.io",
+            "port": 8010,
+            "targetCluster": "thor",
+            "rejectUnauthorized": true,
+            "resultLimit": 100,
+            "timeoutSecs": 60,
+            "user": "EnterYourNameHere",
+            "password": ""
+        },
+        {
             "name": "localhost",
             "type": "ecl",
             "request": "launch",
@@ -12,7 +26,7 @@
             "rejectUnauthorized": true,
             "resultLimit": 100,
             "timeoutSecs": 60,
-            "user": "TrainerBob",
+            "user": "yournamehere",
             "password": ""
         },
         {
@@ -23,10 +37,10 @@
             "serverAddress": "play.hpccsystems.com",
             "port": 18010,
             "targetCluster": "thor",
-            "rejectUnauthorized": false,
+            "rejectUnauthorized": true,
             "resultLimit": 100,
             "timeoutSecs": 60,
-            "user": "gitpod_user",
+            "user": "yournamehere",
             "password": ""
         }
     ]
